@@ -53,7 +53,8 @@ const pedidoSchema = z.object({
     path: ["general"] // Este error se mostrará como error general
 });
 
-export const procesarPedido = defineAction({
+export const server = {
+  procesarPedido: defineAction({
     accept: 'form',
     input: pedidoSchema,
     handler: async (input) => {
@@ -99,4 +100,5 @@ export const procesarPedido = defineAction({
             };
         }
     }
-});
+  })
+};

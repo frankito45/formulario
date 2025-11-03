@@ -1,14 +1,14 @@
 
 
 ---
-import { procesarPedido } from '../actions';
+import { server } from '../actions';
 ---
 <div class="min-h-screen flex items-center justify-center bg-gray-100 p-4">
 
   <form 
   id="pedidoForm" 
   method="POST"
-  action={procesarPedido.url}
+  action={server.procesarPedido.url}
   class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md space-y-4"
   >
   <div id="error-container"></div>
